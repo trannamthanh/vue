@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="js.js"></script>
+    <title> Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light shadow-sm py-3 sticky-top">
+        <div class="form-inline col-xl-12 d-flex">
+            <div class="menu-icon">
+                <a href="#" id="sidebarCollapse" data-toggle="collapse"><i class="fas fa-list"></i></a>
+            </div>
+            <h6>welcome</h6><img src="image/6453.jpg" alt="Avatar" class="avatar">
+    </nav>
+
+    <div id="container">
+        <nav id="sidebar" class="shadow-lg">
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#bt-dash" data-toggle="collapse">
+                        <i class="fas fa-store"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#bt-list" data-toggle="collapse">
+                        <i class="fas fa-tv"></i>
+                        <p>List</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="bt-list" class="shadow sub-sidebar collapse">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="style1.html">
+                        <i class="fas fa-list"></i> Style 1
+                    </a>
+                </li>
+                <li>
+                    <a href="style2.html">
+                        <i class="fas fa-th-large"></i> Style 2
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="bt-dash" class="shadow sub-sidebar collapse">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-store"></i> Default
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+            <div id="content-header">
+                <div class="col-xl-12 d-flex">
+                    <div class="col-xl-6">
+                        <p>Member List</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="float-right">
+                            <button type="button" id="add-new" class="btn btn-lg btn-primary">ADD NEW</button>
+                            <button type="button" id="check-all" class="btn btn-lg btn-primary"><i class="far fa-square"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="option" class="col-xl-12 d-flex">
+                    <div id="view-option" class="col-xl-6">
+                        <div class="float-left">
+                            <a href="style1.html">
+                                <i class="fas fa-list"></i>
+                            </a>
+                            <a href="style2.html" class="active">
+                                <i class="fas fa-th-large"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="num-result" class="col-xl-6">
+                        <div class="float-right">
+                            <span>Displaying 1-10 of 210 items</span>
+                            <select name="num-result" id="num-result">
+                                <option value="10">10</option>
+                                <option value="10">20</option>
+                                <option value="10">30</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="content-body">
+                <div class="row" id="productapi2">
+                </div>
+                <ul class="pagination modal-3">
+                    <li><a href="#" class="prev">&laquo</a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li> <a href="#" class="active">2</a></li>
+                    <li> <a href="#" class="active">3</a></li>
+                    <li> <a href="#" class="active">4</a></li>
+                    <li> <a href="#" class="active">5</a></li>
+                    <li><a href="#" class="next">&raquo;</a></li>
+                </ul>
+                </a>
+                <div id="pop"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
